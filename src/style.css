@@ -1,0 +1,182 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Mongolian Baiti",sans-serif;
+}
+.container{
+    max-width: 1370px;
+    margin: 0 auto;
+    width: 100%;
+}
+.App{
+}
+.form{
+    position: absolute;
+    padding: 40px 30px;
+    border: 1px solid black;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 12px;
+    margin: 10px 0;
+}
+.form__title{
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 31px;
+    font-style: italic;
+}
+.form__input{
+    height: 30px;
+    border-radius: 3px 0 0 3px;
+    border: 1px solid black;
+    outline: none;
+    padding-left: 10px;
+    letter-spacing: 1px;
+    transition: .3s;
+    color: slateblue;
+    width: 226px;
+}
+.form__input:focus{
+    -webkit-box-shadow: 0 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    box-shadow: 0 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    transition: .3s;
+}
+.form__btn{
+    height: 30px;
+    border-radius: 0 3px 3px 0;
+    border: 1px solid black;
+    width: 145px;
+    cursor: pointer;
+    border-left: none;
+    color: white;
+    background-color: slateblue;
+}
+.weather__top{
+    display: flex;
+    column-gap: 250px;
+    text-align: center;
+    margin-top: 15px;
+}
+.weather__middle{
+    display: flex;
+    margin-top: 20px;
+}
+.weather__temp{
+    font-size: 70px;
+    margin-right: 10px;
+}
+.weather__farens{
+    font-size: 25px;
+    cursor: pointer;
+    display: flex;
+    column-gap: 7px;
+
+}
+.weather__descr{
+    font-size: 20px;
+    margin-top: 45px;
+}
+.weather__time{
+    font-size: 20px;
+    color: slateblue;
+    margin-bottom: 15px;
+}
+.weather__hum{
+    font-size: 22px;
+}
+.weather__farens-cel.active{
+    color: orangered;
+}
+.weather__farens-far.active{
+    color: orangered;
+}
+.fiveDay{
+    height: 40px;
+    background-color: slateblue;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin: 15px auto 0;
+    display: block;
+    padding:0  10px;
+    cursor: pointer;
+}
+.fives{
+    padding-top: 30px;
+    position: relative;
+}
+.fives__city{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.fives__btn{
+    background-color: slateblue;
+    width: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    border: none;
+}
+.getWeather__card{
+    display: flex;
+    column-gap: 11px;
+}
+.getWeather__temp{
+    font-size: 70px;
+}
+.getWeather__switch{
+    font-size: 25px;
+    display: flex;
+    column-gap: 5px;
+    cursor: pointer;
+}
+.getWeather__switch-cel.active{
+    color: orangered;
+}
+.getWeather__switch-far.active{
+    color: orangered;
+}
+.getWeather__hum{
+    font-size: 22px;
+    margin: 10px 0;
+}
+.buttons{
+    display: flex;
+    column-gap: 45px;
+    margin-top: 80px;
+    margin-bottom: 39px;
+}
+.buttons__btn{
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
+    background-color: slateblue;
+    border-radius: 10px;
+    border: none;
+}
+.weather__row{
+    display: flex;
+    column-gap: 15px;
+}
+.weather__get{
+    border: 1px solid black;
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+.weather__get-temp{
+    font-size: 23px;
+}
+.qwerty{
+    color: orangered;
+}
+.vanta{
+    position: fixed;
+    background-color: slateblue;
+    color: white;
+    width: 100%;
+    z-index: 0;
+    height: 100vh;
+}
